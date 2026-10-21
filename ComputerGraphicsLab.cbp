@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ComputerGraphicsLab" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ComputerGraphicsLab" outputDir="bin/Debug/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-Wall" />
+					<Add option="-fexceptions" />
+					<Add directory="." />
+				</Compiler>
+				<Linker>
+					<Add library="freeglut" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ComputerGraphicsLab" outputDir="bin/Release/" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-fexceptions" />
+					<Add directory="." />
+				</Compiler>
+				<Linker>
+					<Add library="freeglut" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="objects.cpp" />
+		<Unit filename="objects.h" />
+		<Unit filename="transformations.cpp" />
+		<Unit filename="transformations.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
